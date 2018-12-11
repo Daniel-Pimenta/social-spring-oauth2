@@ -1,0 +1,25 @@
+  <header>
+  <nav>
+    <div class="nav-wrapper" style="margin-left:5px; margin-right-5px;">
+      <a href="#!" class="brand-logo left"><i class="material-icons left">book</i>Livros e Ideias</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sass.html"  >Opt 1</a></li>
+        <li><a href="badges.html">Opt 2</a></li>
+        <!-- Dropdown Trigger -->
+        <li>
+          <a class="dropdown-trigger" href="#!" data-target="dropdown1">
+            <span th:text="${usuario.name}">Meu Nome</span><i class="material-icons right">arrow_drop_down</i>
+          </a>
+        </li>
+        <li class="valign-wrapper"><img th:src="${usuario.picture.data.url}"></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Dropdown Structure -->
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="#!">one</a></li>
+    <li><a href="#!">two</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">three</a></li>
+  </ul>
+  </header>
